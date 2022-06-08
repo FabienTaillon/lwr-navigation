@@ -1,0 +1,18 @@
+{
+    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "assets": [
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/assets"
+        }
+    ],
+    "routes": [
+        {
+            "id": "app",
+            "path": "/*",
+            "rootComponent": "example/app",
+            "layoutTemplate": "$layoutsDir/main.html"
+        }
+    ]
+}

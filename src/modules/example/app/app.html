@@ -1,0 +1,12 @@
+<template>
+    <lwr-router-container router={router}>
+        <div style="margin-bottom: 20px">
+            <example-page-link label="Home" page-reference={homeReference}></example-page-link>
+            <example-page-link label="Detail" page-reference={detailReference} style="margin-left: 10px"></example-page-link>
+            <example-page-link-navigation-mixin label="Detail via Mixin" page-reference={detail2Reference} style="margin-left: 10px"></example-page-link-navigation-mixin>
+        </div>
+        <lwr-outlet>
+            <div slot="error">This content failed to display.</div>
+        </lwr-outlet>
+    </lwr-router-container>
+</template>
